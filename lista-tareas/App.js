@@ -29,6 +29,10 @@ const App = () => {
     setTodoItems(tempArr);
   };
 
+  // Renderizar la aplicación
+  // El componente TodoInput recibe la función addTodoItem como prop
+  // El componente TodoItem recibe las funciones deleteTodoItem y completeTodoItem como prop
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#212121" />
@@ -49,30 +53,30 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      paddingHorizontal: 20,
-      backgroundColor: '#FFFFFF',
-      borderWidth: 2,
-      borderColor: '#E0E0E0',
-      borderRadius: 8,
-      padding: 5,
-      margin: 5,
-    },
-    title: {
-      fontSize: 36,
-      fontWeight: 'bold',
-      marginBottom: 20,
-      color: '#2C3E50',
-      textAlign: 'center',
-      textTransform: 'uppercase',
-    },
-    listContainer: {
-      maxHeight: '60%', // Define el tamaño máximo del contenedor de la lista
-      marginBottom: 20,
-    },
-  });
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    backgroundColor: '#FFFFFF',
+    borderWidth: 2,
+    borderColor: '#E0E0E0',
+    borderRadius: 8,
+    padding: 5,
+    margin: 5,
+  },
+  title: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color: '#2C3E50',
+    textAlign: 'center',
+    textTransform: 'uppercase',
+  },
+  listContainer: {
+    maxHeight: '60%', // Define el tamaño máximo del contenedor de la lista
+    marginBottom: 20,
+  },
+});
 
 export default App;
