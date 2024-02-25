@@ -1,40 +1,30 @@
 {
   "expo": {
-    "name": "ReactNativeTodo",
-    "slug": "ReactNativeTodo",
-    "privacy": "public",
-    "sdkVersion": "32.0.0",
-    "platforms": ["ios", "android"],
+    "name": "app-notas",
+    "slug": "app-notas",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.openwebinars.reactnativetodo",
-      "buildNumber": "1",
-      "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "Necesario para acceder a tu posición"
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
       }
     },
-    "description": "",
-    "android": {
-      "package": "com.openwebinars.reactnativetodo",
-      "versionCode": 1,
-      "permissions": [
-        "ACCESS_COARSE_LOCATION",
-        "ACCESS_FINE_LOCATION",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
-      ]
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }
